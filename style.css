@@ -12,19 +12,27 @@
 
 @layer components {
     .section-wrapper {
-        @apply flex w-5/6 h-full mx-auto items-center
+        @apply flex mx-auto w-3/4 items-center
     }
 
     .section-container {
-        @apply grid grid-cols-4 grid-rows-2 gap-6
+        @apply grid md:grid-cols-4 md:grid-rows-2 gap-6 my-16 md:my-0
     }
 
     .testimonial-container {
-        @apply flex flex-col gap-4 px-9 py-7 rounded-lg
+        @apply flex flex-col gap-4 px-8 py-7 rounded-lg
+    }
+
+    .user-container {
+        @apply flex items-center gap-4
     }
 
     .user-image {
         @apply rounded-full h-8 w-auto border-2
+    }
+
+    .user-details {
+        @apply flex flex-col
     }
 
     .user-name {
@@ -33,5 +41,17 @@
 
     .user-status {
         @apply text-xs font-medium leading-tight text-color-light-gray/50
+    }
+
+    .content-container {
+        @apply flex flex-col gap-4 justify-between
+    }
+
+    .content-heading {
+        @apply text-lg font-medium leading-tight
+    }
+
+    .content-description {
+        @apply text-xs font-medium h-full
     }
 }
