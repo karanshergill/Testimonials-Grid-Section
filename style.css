@@ -9,3 +9,29 @@
         font-family: 'Barlow Semi Condensed';
     }
 }
+
+@layer components {
+    .section-wrapper {
+        @apply flex w-5/6 h-full mx-auto items-center
+    }
+
+    .section-container {
+        @apply grid grid-cols-4 grid-rows-2 gap-6
+    }
+
+    .testimonial-container {
+        @apply flex flex-col gap-4 px-9 py-7 rounded-lg
+    }
+
+    .user-image {
+        @apply rounded-full h-8 w-auto border-2
+    }
+
+    .user-name {
+        @apply text-sm font-medium leading-tight text-color-light-gray
+    }
+
+    .user-status {
+        @apply text-xs font-medium leading-tight text-color-light-gray/50
+    }
+}
