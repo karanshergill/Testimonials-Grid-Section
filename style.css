@@ -16,7 +16,7 @@
     }
 
     .section-container {
-        @apply grid md:grid-cols-4 md:grid-rows-2 gap-6 my-16 md:my-0
+        @apply grid md:grid-cols-4 gap-6 my-16 md:my-0
     }
 
     .testimonial-container {
@@ -44,7 +44,7 @@
     }
 
     .content-container {
-        @apply flex flex-col gap-4 justify-between
+        @apply flex flex-col gap-4
     }
 
     .content-heading {
@@ -52,6 +52,6 @@
     }
 
     .content-description {
-        @apply text-xs font-medium h-full
+        @apply text-xs font-medium
     }
 }
